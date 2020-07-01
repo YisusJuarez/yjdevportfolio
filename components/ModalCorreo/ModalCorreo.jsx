@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
@@ -6,8 +7,10 @@ import MuiDialogTitle from "@material-ui/core/DialogTitle";
 import MuiDialogContent from "@material-ui/core/DialogContent";
 import MuiDialogActions from "@material-ui/core/DialogActions";
 import IconButton from "@material-ui/core/IconButton";
+import emailjs from "emailjs-com";
 //import CloseIcon from '@material-ui/icons/Close';
 import Typography from "@material-ui/core/Typography";
+import SuccesAlert from "../SuccesAlert/SuccesAlert";
 
 const styles = (theme) => ({
   root: {
@@ -17,8 +20,8 @@ const styles = (theme) => ({
   closeButton: {
     position: "absolute",
     right: theme.spacing(1),
-    top: theme.spacing(.5),
-    color: 'white',
+    top: theme.spacing(0.5),
+    color: "white",
   },
 });
 
@@ -55,16 +58,77 @@ const DialogActions = withStyles((theme) => ({
 
 export default function ModalCorreo() {
   const [open, setOpen] = React.useState(false);
-
+  const [email, setEmail] = useState("");
+  const [lName, setlName] = useState("");
+  const [Alert, setlAlert] = useState("");
+  const [send, setSend] = useState(false)
+  const submitValue = () => {
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var frmdetails = {
+      Message_Customer: lName,
+      Email_Customer: email,
+    };
+    if (lName !== "" && re.test(email)) {
+      console.log(frmdetails);
+      emailjs
+        .send(
+          "dotcom",
+          "template_p58uKSLu",
+          frmdetails,
+          "user_MFW8G7EXKgP2CbHXXfPn7"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setEmail('');
+            setlName('')
+            setSend(true)
+            setTimeout(() => {
+              console.log('Hello, World!')
+              setSend(false)
+            }, 3000);
+          },
+          (error) => {
+            setlAlert("Error! Try Again Later.");
+            console.log(error.text);
+            setSend(false)
+          }
+        );
+      setlAlert("");
+      handleClose();
+    } else {
+      setlAlert("Error! Invalid Mail");
+      setSend(false)
+      console.log("No valido");
+    }
+  };
   const handleClickOpen = () => {
     setOpen(true);
   };
   const handleClose = () => {
     setOpen(false);
   };
+  function Greeting(props) {
+    const showAlerts = props.show;
+    if (showAlerts) {
+      return <SuccesAlert openAlert={showAlerts} />;
+    }
+    return null;
+  }
+  const handleCloseAlert = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setSend(false)
+  };
 
   return (
+  
     <div>
+     
+     <Greeting show={send}  autoHideDuration={6000}
+        onClose={handleCloseAlert}/>
       <button
         variant="outlined"
         color="primary"
@@ -78,26 +142,49 @@ export default function ModalCorreo() {
         aria-labelledby="customized-dialog-title"
         open={open}
         PaperProps={{
-          style: { borderRadius: 0 }
+          style: { borderRadius: 0 },
         }}
       >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose} style={{ paddingBottom:10,backgroundColor:'#383fd9',color:'white' }}>
+        <DialogTitle
+          id="customized-dialog-title"
+          onClose={handleClose}
+          style={{
+            paddingBottom: 10,
+            backgroundColor: "#383fd9",
+            color: "white",
+          }}
+        >
           CONTACT ME
         </DialogTitle>
-        <DialogContent style={{ paddingTop:0 }}>
+        <DialogContent style={{ paddingTop: 0 }}>
+          <p className="alert-form">{Alert}</p>
           <p className="label-form">Mail:</p>
-          <input type="text" className="input-contact"></input>
+          <input
+            type="mail"
+            className="input-contact"
+            onChange={(e) => setEmail(e.target.value)}
+          ></input>
           <p className="label-form">Message:</p>
-          <textarea rows="4" className="input-contact"></textarea>
+          <textarea
+            rows="4"
+            className="input-contact"
+            onChange={(e) => setlName(e.target.value)}
+          ></textarea>
         </DialogContent>
         <DialogActions>
-          <Button  onClick={handleClose} color="primary">
+          <Button onClick={submitValue} color="primary">
             ENVIAR
           </Button>
         </DialogActions>
       </Dialog>
       <style jsx>
         {`
+        .alert-form{
+          color:red;
+          font-family: "Roboto";
+          margin-bottom:0;
+          font-size:13px;
+        }
           .btn-purple {
             background-color: #383fd9;
             color: white;
@@ -115,26 +202,24 @@ export default function ModalCorreo() {
             outline: none !important;
             outline-width: 0 !important;
           }
-          .input-contact{
-            width:200px;
-            padding:10px;
-            border-radius:0px;
-            display:block;
+          .input-contact {
+            width: 200px;
+            padding: 10px;
+            border-radius: 0px;
+            display: block;
             border: 1px solid #7777;
           }
-          .input-contact:focus{
+          .input-contact:focus {
             outline: none !important;
             outline-width: 0 !important;
           }
-          .label-form{
+          .label-form {
             font-family: "Roboto";
-            font-weight:300;
-            margin-bottom:0px;
+            font-weight: 300;
+            margin-bottom: 0px;
             padding-top: 5px;
             padding-bottom: 5px;
           }
-          
-        
         `}
       </style>
     </div>
