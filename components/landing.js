@@ -5,6 +5,7 @@ class Landing extends React.Component {
         return (
             <>
                 <HeadContent></HeadContent>
+                
             </>
         )
 

@@ -1,6 +1,7 @@
 import Container from "@material-ui/core/Container";
 import NavBar from "../NavBar/NavBar";
 import Grid from "@material-ui/core/Grid";
+import ModalCorreo from '../ModalCorreo/ModalCorreo';
 function HeadContent(props) {
   return (
     <div className="bg">
@@ -19,7 +20,7 @@ function HeadContent(props) {
               <br /> UX, UI interface & SEO.
             </p>
             <div className="center">
-              <button className="btn-purple">CONTACT ME</button>
+             <ModalCorreo></ModalCorreo>
             </div>
           </Grid>
           <Grid item md={5}>
@@ -28,24 +29,6 @@ function HeadContent(props) {
         </Grid>
       </Container>
       <style jsx>{`
-        .btn-purple {
-          background-color: #383fd9;
-          color: white;
-          font-family: "Roboto";
-          font-size: 500;
-          border: 0px;
-          font-size: 14px;
-          padding: 10px 25px 10px 25px;
-          cursor: pointer;
-          -webkit-box-shadow: 4px 3px 20px 0px rgba(56, 63, 217, 0.6);
-          -moz-box-shadow: 4px 3px 20px 0px rgba(56, 63, 217, 0.6);
-          box-shadow: 4px 3px 20px 0px rgba(56, 63, 217, 0.6);
-        }
-        .btn-purple:focus {
-          outline: none !important;
-          outline-width: 0 !important;
-         
-        }
         .img-person {
           width: 28vw;
           text-align: center;
