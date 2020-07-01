@@ -17,8 +17,8 @@ const styles = (theme) => ({
   closeButton: {
     position: "absolute",
     right: theme.spacing(1),
-    top: theme.spacing(1),
-    color: theme.palette.grey[500],
+    top: theme.spacing(.5),
+    color: 'white',
   },
 });
 
@@ -77,16 +77,21 @@ export default function ModalCorreo() {
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
+        PaperProps={{
+          style: { borderRadius: 0 }
+        }}
       >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+        <DialogTitle id="customized-dialog-title" onClose={handleClose} style={{ paddingBottom:10,backgroundColor:'#383fd9',color:'white' }}>
           CONTACT ME
         </DialogTitle>
-        <DialogContent dividers>
-          <input type="text"></input>
-          <input type="text"></input>
+        <DialogContent style={{ paddingTop:0 }}>
+          <p className="label-form">Mail:</p>
+          <input type="text" className="input-contact"></input>
+          <p className="label-form">Message:</p>
+          <textarea rows="4" className="input-contact"></textarea>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} color="primary">
+          <Button  onClick={handleClose} color="primary">
             ENVIAR
           </Button>
         </DialogActions>
@@ -110,6 +115,26 @@ export default function ModalCorreo() {
             outline: none !important;
             outline-width: 0 !important;
           }
+          .input-contact{
+            width:200px;
+            padding:10px;
+            border-radius:0px;
+            display:block;
+            border: 1px solid #7777;
+          }
+          .input-contact:focus{
+            outline: none !important;
+            outline-width: 0 !important;
+          }
+          .label-form{
+            font-family: "Roboto";
+            font-weight:300;
+            margin-bottom:0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+          
+        
         `}
       </style>
     </div>

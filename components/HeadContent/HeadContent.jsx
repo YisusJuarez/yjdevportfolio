@@ -43,6 +43,7 @@ function HeadContent(props) {
           height: 100vh;
           background-size: cover;
           background-position: center;
+          min-height:500px;
         }
         .h1-title {
           font-family: "Roboto";
