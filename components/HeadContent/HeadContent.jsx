@@ -10,24 +10,26 @@ function HeadContent(props) {
       <Container maxWidth="lg">
         <Grid container spacing={1}>
           <Grid item md={7} sm={12}>
-            <Typist
-              cursor={{
-                show: false,
-              }}
-              stdTypingDelay={25}
-              avgTypingDelay={80}
-            >
+           
               <h1 className="h1-title">Freelance</h1>
               <h2 className="h2-subtitle">
                 Front End <span className="h2-bgblack">Developer</span>
               </h2>
-            </Typist>
+          
+            <Typist
+              cursor={{
+                show: false,
+              }}
+              stdTypingDelay={20}
+              avgTypingDelay={60}
+            >
             <p className="text-desc">
               Hi, I’m Jesús Juárez.
               <br />
               I’ll boost your brand with the power of responsive design,
               <br /> UX, UI interface & SEO.
             </p>
+            </Typist>
             <div className="center">
               <ModalCorreo></ModalCorreo>
               <button className="btn-portafolio">PORTAFOLIO</button>
