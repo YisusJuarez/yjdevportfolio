@@ -61,7 +61,7 @@ export default function ModalCorreo() {
   const [email, setEmail] = useState("");
   const [lName, setlName] = useState("");
   const [Alert, setlAlert] = useState("");
-  const [send, setSend] = useState(false)
+  const [send, setSend] = useState(false);
   const submitValue = () => {
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var frmdetails = {
@@ -80,25 +80,25 @@ export default function ModalCorreo() {
         .then(
           (result) => {
             console.log(result.text);
-            setEmail('');
-            setlName('')
-            setSend(true)
+            setEmail("");
+            setlName("");
+            setSend(true);
             setTimeout(() => {
-              console.log('Hello, World!')
-              setSend(false)
+              console.log("Hello, World!");
+              setSend(false);
             }, 3000);
           },
           (error) => {
             setlAlert("Error! Try Again Later.");
             console.log(error.text);
-            setSend(false)
+            setSend(false);
           }
         );
       setlAlert("");
       handleClose();
     } else {
       setlAlert("Error! Invalid Mail");
-      setSend(false)
+      setSend(false);
       console.log("No valido");
     }
   };
@@ -116,19 +116,20 @@ export default function ModalCorreo() {
     return null;
   }
   const handleCloseAlert = (event, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
 
-    setSend(false)
+    setSend(false);
   };
 
   return (
-  
-    <div>
-     
-     <Greeting show={send}  autoHideDuration={6000}
-        onClose={handleCloseAlert}/>
+    <div className="inline-button">
+      <Greeting
+        show={send}
+        autoHideDuration={6000}
+        onClose={handleCloseAlert}
+      />
       <button
         variant="outlined"
         color="primary"
@@ -179,13 +180,22 @@ export default function ModalCorreo() {
       </Dialog>
       <style jsx>
         {`
-        .alert-form{
-          color:red;
-          font-family: "Roboto";
-          margin-bottom:0;
-          font-size:13px;
+        .inline-button{
+          display:inline;
         }
+        @media only screen and (max-width: 1000px) {
+          .inline-button{
+          display:block;
+        }
+        }
+          .alert-form {
+            color: red;
+            font-family: "Roboto";
+            margin-bottom: 0;
+            font-size: 13px;
+          }
           .btn-purple {
+           
             background-color: #383fd9;
             color: white;
             font-family: "Roboto";

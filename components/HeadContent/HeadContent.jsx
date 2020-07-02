@@ -1,7 +1,7 @@
 import Container from "@material-ui/core/Container";
 import NavBar from "../NavBar/NavBar";
 import Grid from "@material-ui/core/Grid";
-import ModalCorreo from '../ModalCorreo/ModalCorreo';
+import ModalCorreo from "../ModalCorreo/ModalCorreo";
 function HeadContent(props) {
   return (
     <div className="bg">
@@ -20,7 +20,8 @@ function HeadContent(props) {
               <br /> UX, UI interface & SEO.
             </p>
             <div className="center">
-             <ModalCorreo></ModalCorreo>
+              <ModalCorreo></ModalCorreo>
+              <button className="btn-portafolio">PORTAFOLIO</button>
             </div>
           </Grid>
           <Grid item md={5}>
@@ -29,6 +30,24 @@ function HeadContent(props) {
         </Grid>
       </Container>
       <style jsx>{`
+        .btn-portafolio {
+          background-color: black;
+          color: white;
+          font-family: "Roboto";
+          font-size: 500;
+          border: 0px;
+          font-size: 14px;
+          padding: 10px 25px 10px 25px;
+          cursor: pointer;
+          -webkit-box-shadow: -1px 0px 26px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 26px -5px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 26px -5px rgba(0,0,0,0.75);
+          margin-left: 10px;
+        }
+        .btn-portafolio:focus {
+            outline: none !important;
+            outline-width: 0 !important;
+          }
         .img-person {
           width: 28vw;
           text-align: center;
@@ -43,7 +62,7 @@ function HeadContent(props) {
           height: 100vh;
           background-size: cover;
           background-position: center;
-          min-height:500px;
+          min-height: 500px;
         }
         .h1-title {
           font-family: "Roboto";
@@ -70,9 +89,12 @@ function HeadContent(props) {
           font-size: 24px;
         }
         @media only screen and (max-width: 1000px) {
+          .btn-portafolio {
+            margin-left: 0;
+            margin-top:20px;
+          }
           .center {
-            display: flex;
-            justify-content: center;
+            text-align: center;
           }
           .img-person {
             display: none;
