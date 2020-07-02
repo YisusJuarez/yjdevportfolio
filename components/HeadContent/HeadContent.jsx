@@ -2,6 +2,7 @@ import Container from "@material-ui/core/Container";
 import NavBar from "../NavBar/NavBar";
 import Grid from "@material-ui/core/Grid";
 import ModalCorreo from "../ModalCorreo/ModalCorreo";
+import Typist from "react-typist";
 function HeadContent(props) {
   return (
     <div className="bg">
@@ -9,10 +10,18 @@ function HeadContent(props) {
       <Container maxWidth="lg">
         <Grid container spacing={1}>
           <Grid item md={7} sm={12}>
-            <h1 className="h1-title">Freelance</h1>
-            <h2 className="h2-subtitle">
-              Front End <span className="h2-bgblack">Developer</span>
-            </h2>
+            <Typist
+              cursor={{
+                show: false,
+              }}
+              stdTypingDelay={25}
+              avgTypingDelay={80}
+            >
+              <h1 className="h1-title">Freelance</h1>
+              <h2 className="h2-subtitle">
+                Front End <span className="h2-bgblack">Developer</span>
+              </h2>
+            </Typist>
             <p className="text-desc">
               Hi, I’m Jesús Juárez.
               <br />
@@ -39,15 +48,15 @@ function HeadContent(props) {
           font-size: 14px;
           padding: 10px 25px 10px 25px;
           cursor: pointer;
-          -webkit-box-shadow: -1px 0px 26px -5px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 0px 26px -5px rgba(0,0,0,0.75);
-box-shadow: -1px 0px 26px -5px rgba(0,0,0,0.75);
+          -webkit-box-shadow: -1px 0px 26px -5px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -1px 0px 26px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 0px 26px -5px rgba(0, 0, 0, 0.75);
           margin-left: 10px;
         }
         .btn-portafolio:focus {
-            outline: none !important;
-            outline-width: 0 !important;
-          }
+          outline: none !important;
+          outline-width: 0 !important;
+        }
         .img-person {
           width: 28vw;
           text-align: center;
@@ -91,7 +100,7 @@ box-shadow: -1px 0px 26px -5px rgba(0,0,0,0.75);
         @media only screen and (max-width: 1000px) {
           .btn-portafolio {
             margin-left: 0;
-            margin-top:20px;
+            margin-top: 20px;
           }
           .center {
             text-align: center;
