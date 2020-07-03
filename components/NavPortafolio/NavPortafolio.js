@@ -34,7 +34,6 @@ export default function NavPortafolio() {
           <Typography variant="h6" className={classes.title}>
             Dotcom
           </Typography>
-          
         </Toolbar>
       </AppBar>
     </div>
