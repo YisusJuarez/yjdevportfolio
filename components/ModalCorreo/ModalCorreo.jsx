@@ -159,7 +159,7 @@ export default function ModalCorreo() {
         </DialogTitle>
         <DialogContent style={{ paddingTop: 0 }}>
           <p className="alert-form">{Alert}</p>
-          <p className="label-form">Mail:</p>
+          <p className="label-form">Your Mail:</p>
           <input
             type="mail"
             className="input-contact"
