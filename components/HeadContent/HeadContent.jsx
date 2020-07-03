@@ -3,9 +3,11 @@ import NavBar from "../NavBar/NavBar";
 import Grid from "@material-ui/core/Grid";
 import ModalCorreo from "../ModalCorreo/ModalCorreo";
 import Typist from "react-typist";
+import Link from 'next/link'
 function HeadContent(props) {
   return (
     <div className="bg">
+    
       <NavBar></NavBar>
       <Container maxWidth="lg">
         <Grid container spacing={1}>
@@ -32,7 +34,11 @@ function HeadContent(props) {
             </Typist>
             <div className="center">
               <ModalCorreo></ModalCorreo>
-              <button className="btn-portafolio">PORTAFOLIO</button>
+             
+              <Link href="/portfolio">
+              <button  className="btn-portafolio">PORTFOLIO</button>
+              </Link>
+             
             </div>
           </Grid>
           <Grid item md={5}>

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
-class Portafolio extends React.Component {
+
+class Portfolio extends React.Component {
     render() {
         return (
             <>
@@ -11,4 +12,4 @@ class Portafolio extends React.Component {
         )
     }
 }
-export default Portafolio;
+export default Portfolio;
