@@ -1,11 +1,27 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
+import Grid from '@material-ui/core/Grid';
+import CardSkill from '../CardSkill/CardSkill';
 class SkillsExp extends React.Component {
     render() {
         return (
             <>
-            <Container maxWidth="lg">
-                <h1 className="titles-bg-black">Skills & Experience</h1>
+                <Container maxWidth="lg">
+                    <h1 className="titles-bg-black">Skills & Experience</h1>
+                    <Grid container spacing={2}>
+                        <Grid item lg={4}>
+                            <CardSkill Skill="React" Descriptionskill="A JavaScript library for building user interfaces"></CardSkill>
+                        </Grid>
+                        <Grid item lg={4}>
+                            <CardSkill Skill="NextJs" Descriptionskill="React Server Side Rendereing Applications"></CardSkill>
+                        </Grid>
+                        <Grid item lg={4}>
+                            <CardSkill Skill="HTML5" Descriptionskill="HyperText Markup Language for websites"></CardSkill>
+                        </Grid>
+                        <Grid item lg={4}>
+                            <CardSkill Skill="CSS3" Descriptionskill="Cascading Style Sheets for Styling websites"></CardSkill>
+                        </Grid>
+                    </Grid>
                 </Container>
                 <style jsx global>{`
                     .titles-bg-black{
