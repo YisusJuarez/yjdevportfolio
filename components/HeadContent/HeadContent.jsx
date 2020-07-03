@@ -42,7 +42,7 @@ function HeadContent(props) {
             </div>
           </Grid>
           <Grid item md={5}>
-            <img className="img-person" src="/img/person.png"></img>
+            <img className="img-person" src="/img/person.png" alt="person-image"></img>
           </Grid>
         </Grid>
       </Container>
