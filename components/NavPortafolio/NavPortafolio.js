@@ -26,11 +26,11 @@ export default function NavPortafolio() {
     <div className={classes.root}>
       <AppBar position="static" color="transparent" elevation={0}>
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <Link href="/">
+          <Link href="/">
+            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <ArrowBackIcon />
-            </Link>
-          </IconButton>
+            </IconButton>
+          </Link>
           <Typography variant="h6" className={classes.title}>
             Dotcom
           </Typography>
