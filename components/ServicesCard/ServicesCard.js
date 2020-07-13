@@ -3,7 +3,7 @@ class ServicesCard extends React.Component {
     render() {
         return (
             <div className="card">
-                <img className="img-icon" src={this.props.img}></img>
+                <img className="img-icon" src={this.props.img} alt={this.props.name}></img>
                 <h2 className="title-service">{this.props.name}</h2>
                 <style jsx global>{`
                     .title-service{
@@ -13,6 +13,11 @@ class ServicesCard extends React.Component {
                     }
                     .img-icon{
                         width:50px;
+                        
+                    }
+                    .card{
+                        
+                        
                     }
                     `
                 }</style>
