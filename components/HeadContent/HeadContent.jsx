@@ -15,7 +15,7 @@ function HeadContent(props) {
            
               <h1 className="h1-title">Freelance</h1>
               <h2 className="h2-subtitle">
-                Front End <span className="h2-bgblack">Developer</span>
+              Front End <span className="h2-bgblack">Developer</span>
               </h2>
           
             <Typist
@@ -26,10 +26,10 @@ function HeadContent(props) {
               avgTypingDelay={60}
             >
             <p className="text-desc">
-              Hi, I’m Jesús Juárez.
+              👋 Hi, I’m Jesús Juárezs.
               <br />
               I’ll boost your brand with the power of responsive design,
-              <br /> UX, UI interface & SEO.
+              <br /> UX, UI interface & SEO 🔥.
             </p>
             </Typist>
             <div className="center">
