@@ -26,7 +26,7 @@ function HeadContent(props) {
               avgTypingDelay={60}
             >
             <p className="text-desc">
-              👋 Hi, I’m Jesús Juárezs.
+              👋 Hi, I’m Jesús Juárez.
               <br />
               I’ll boost your brand with the power of responsive design,
               <br /> UX, UI interface & SEO 🔥.
