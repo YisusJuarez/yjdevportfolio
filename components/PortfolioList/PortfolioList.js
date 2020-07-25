@@ -13,10 +13,7 @@ class PortfolioList extends React.Component {
                 <Grid container spacing={5}>
                     {this.state.projects.map((e) => (
                         <Grid item lg={4} md={4} sm={6} xs={12}>
-                            <div className="card-project">
                                 <img src={e.img} className="img-project card-project"></img>
-                            </div>
-
                         </Grid>
                     ))}
                 </Grid>
@@ -38,10 +35,7 @@ class PortfolioList extends React.Component {
                     .portfolio-top{
                         padding-top:40px;
                     }
-                    .card-project{
-                       
-                       
-                    }
+                    
                     `}</style>
             </Container>
 
