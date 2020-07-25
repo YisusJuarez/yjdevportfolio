@@ -10,6 +10,7 @@ export default function Home() {
         <meta name="description" content="Professional development of websites and web systems with the latest technologies"></meta>
         <meta name="author" content="Dotcom - YJDev"></meta>
         <meta name="keywords" content="HTML, CSS, JavaScript"></meta>
+        <meta name="theme-color" content="#fefbfb"></meta>
       </Head>
      
   
