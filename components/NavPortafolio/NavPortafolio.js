@@ -26,17 +26,17 @@ export default function NavPortafolio() {
   return (
     <div className={classes.root}>
       <AppBar position="static" color="transparent" elevation={0}>
-      <Container maxWidth="lg">
-        <Toolbar  disableGutters>
-          <Link href="/">
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              <ArrowBackIcon />
-            </IconButton>
-          </Link>
-          <Typography variant="h6" className={classes.title}>
-            Dotcom
+        <Container maxWidth="lg">
+          <Toolbar disableGutters>
+            <Link href="/">
+              <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                <ArrowBackIcon />
+              </IconButton>
+            </Link>
+            <Typography variant="h6" className={classes.title}>
+              Dotcom
           </Typography>
-        </Toolbar>
+          </Toolbar>
         </Container>
       </AppBar>
     </div>

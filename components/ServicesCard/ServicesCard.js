@@ -8,15 +8,20 @@ class ServicesCard extends React.Component {
                 <style jsx global>{`
                     .title-service{
                     font-family:'Roboto';
-                    font-size:16px;
+                    font-size:18px;
+                    font-weight:400;
 
                     }
                     .img-icon{
-                        width:50px;
-                        
+                        width:80px; 
+                    }
+                    @media (max-width:700px){
+                        .img-icon{
+                        width:70px; 
+                    }
                     }
                     .card{
-                        
+                        padding-top:10px;
                         
                     }
                     `

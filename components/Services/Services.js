@@ -20,15 +20,12 @@ class Services extends React.Component {
                     <Grid container spacing={2}>
 
                         {this.state.services.map((servicio,id) =>
-                            <Grid item lg={2} md={3} sm={6} xs={6} >
+                            <Grid item lg={2} md={3} sm={3} xs={6} >
                                 <ServicesCard name={servicio.name} img={servicio.img}></ServicesCard>
                             </Grid>
                         )}
 
                     </Grid>
-
-
-
                 </Container>
                
             </>
@@ -37,4 +34,3 @@ class Services extends React.Component {
     }
 }
 export default Services;
-//<ServicesCard name="ok" desc={servicio.desc}></ServicesCard>
