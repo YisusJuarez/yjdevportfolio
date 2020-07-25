@@ -14,7 +14,7 @@ class PortfolioList extends React.Component {
                     {this.state.projects.map((e) => (
                         <Grid item lg={4} md={4} sm={6} xs={12}>
                             <div className="card-project">
-                                <img src={e.img} className="img-project"></img>
+                                <img src={e.img} className="img-project card-project"></img>
                             </div>
 
                         </Grid>
@@ -30,15 +30,17 @@ class PortfolioList extends React.Component {
                     }
                     .img-project{
                         width:100%;
+                        object-fit:cover;
+                        -webkit-box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
+-moz-box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
+box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
                     }
                     .portfolio-top{
                         padding-top:40px;
                     }
                     .card-project{
-                        background-color:white;
-                        -webkit-box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
--moz-box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
-box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
+                       
+                       
                     }
                     `}</style>
             </Container>
