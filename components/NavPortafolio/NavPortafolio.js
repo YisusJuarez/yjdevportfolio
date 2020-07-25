@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ModalCorreo from '../ModalCorreo/ModalCorreo';
+import Container from "@material-ui/core/Container";
 import Link from 'next/link'
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,7 +26,8 @@ export default function NavPortafolio() {
   return (
     <div className={classes.root}>
       <AppBar position="static" color="transparent" elevation={0}>
-        <Toolbar>
+      <Container maxWidth="lg">
+        <Toolbar  disableGutters>
           <Link href="/">
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <ArrowBackIcon />
@@ -35,6 +37,7 @@ export default function NavPortafolio() {
             Dotcom
           </Typography>
         </Toolbar>
+        </Container>
       </AppBar>
     </div>
   );
