@@ -36,9 +36,9 @@ class PortfolioList extends React.Component {
                     }
                     .card-project{
                         background-color:white;
-                        -webkit-box-shadow: 0px 0px 96px -41px rgba(46,74,117,0.7);
--moz-box-shadow: 0px 0px 96px -41px rgba(46,74,117,0.7);
-box-shadow: 0px 0px 96px -41px rgba(46,74,117,0.7);
+                        -webkit-box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
+-moz-box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
+box-shadow: 0px 0px 30px -2px rgba(166,172,175,0.57);
                     }
                     `}</style>
             </Container>
