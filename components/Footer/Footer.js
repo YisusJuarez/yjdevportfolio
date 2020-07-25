@@ -31,7 +31,7 @@ class Portfolio extends React.Component {
                 </Container>
                 <style jsx>{`
                     .icons-social{
-                        width:25px;
+                        width:23px;
                         opacity:.6;
                     }
                     .icons-social-2{
