@@ -34,7 +34,7 @@ function HeadContent(props) {
               <ModalCorreo></ModalCorreo>
 
               <Link href="/portfolio">
-                <button className="btn-portafolio">ABOUT ME</button>
+                <button className="btn-portafolio">PORTFOLIO</button>
               </Link>
             </div>
           </Grid>
