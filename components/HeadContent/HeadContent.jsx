@@ -3,21 +3,19 @@ import NavBar from "../NavBar/NavBar";
 import Grid from "@material-ui/core/Grid";
 import ModalCorreo from "../ModalCorreo/ModalCorreo";
 import Typist from "react-typist";
-import Link from 'next/link'
+import Link from "next/link";
 function HeadContent(props) {
   return (
     <div className="bg">
-    
       <NavBar></NavBar>
       <Container maxWidth="lg">
         <Grid container spacing={1}>
           <Grid item md={7} sm={12}>
-           
-              <h1 className="h1-title">Freelance</h1>
-              <h2 className="h2-subtitle">
+            <h1 className="h1-title">Freelance</h1>
+            <h2 className="h2-subtitle">
               Front End <span className="h2-bgblack">Developer</span>
-              </h2>
-          
+            </h2>
+
             <Typist
               cursor={{
                 show: false,
@@ -25,24 +23,27 @@ function HeadContent(props) {
               stdTypingDelay={20}
               avgTypingDelay={60}
             >
-            <p className="text-desc">
-               Hi 👋, I’m Jesús Juárez.
-              <br />
-              I’ll boost your brand with the power of responsive design,
-              <br /> UX, UI interface & SEO 🔥.
-            </p>
+              <p className="text-desc">
+                Hi 👋, I’m Jesús Juárez.
+                <br />
+                I’ll boost your brand with the power of responsive design,
+                <br /> UX, UI interface & SEO 🔥.
+              </p>
             </Typist>
             <div className="center">
               <ModalCorreo></ModalCorreo>
-             
+
               <Link href="/portfolio">
-              <button  className="btn-portafolio">ABOUT ME</button>
+                <button className="btn-portafolio">ABOUT ME</button>
               </Link>
-             
             </div>
           </Grid>
           <Grid item md={5}>
-            <img className="img-person" src="/img/person.png" alt="person-image"></img>
+            <img
+              className="img-person"
+              src="/img/person.png"
+              alt="person-image"
+            ></img>
           </Grid>
         </Grid>
       </Container>
@@ -72,6 +73,20 @@ function HeadContent(props) {
           justify-content: center;
           align-items: center;
           padding-left: 30px;
+
+          animation:personmove 3s infinite;
+        }
+        @keyframes personmove {
+          0% {
+            transform: translateY(-10px);
+          }
+          
+          50% {
+            transform: translateY(10px);
+          }
+          100% {
+            transform: translateY(-10px);
+          }
         }
 
         .bg {
