@@ -8,7 +8,7 @@ class SkillsExp extends React.Component {
             <>
                 <Container maxWidth="lg" className="skills-top">
                     <h1 className="titles-bg-black">Skills</h1>
-                  
+                    <h3 className="sub-bg-black">Latest technologies</h3>
                     <Grid container spacing={2}>
                         <Grid item lg={4} md={6} sm={6} xs={6}>
                             <CardSkill Skill="Javascript" Descriptionskill="Programming Language commonly used in web development."></CardSkill>
