@@ -26,7 +26,7 @@ function HeadContent(props) {
               avgTypingDelay={60}
             >
             <p className="text-desc">
-              👋 Hi, I’m Jesús Juárez.
+               Hi 👋, I’m Jesús Juárez.
               <br />
               I’ll boost your brand with the power of responsive design,
               <br /> UX, UI interface & SEO 🔥.
@@ -36,7 +36,7 @@ function HeadContent(props) {
               <ModalCorreo></ModalCorreo>
              
               <Link href="/portfolio">
-              <button  className="btn-portafolio">PORTFOLIO</button>
+              <button  className="btn-portafolio">ABOUT ME</button>
               </Link>
              
             </div>

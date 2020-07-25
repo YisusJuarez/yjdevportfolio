@@ -6,8 +6,9 @@ class SkillsExp extends React.Component {
     render() {
         return (
             <>
-                <Container maxWidth="lg">
-                    <h1 className="titles-bg-black">Skills & Experience</h1>
+                <Container maxWidth="lg" className="skills-top">
+                    <h1 className="titles-bg-black">Skills</h1>
+                  
                     <Grid container spacing={2}>
                         <Grid item lg={4} md={6} sm={6} xs={6}>
                             <CardSkill Skill="Javascript" Descriptionskill="Programming Language commonly used in web development."></CardSkill>
@@ -33,8 +34,12 @@ class SkillsExp extends React.Component {
                 <style jsx global>{`
                     .titles-bg-black{
                     font-family:'Roboto';
-                    font-size:40px
+                    font-size:40px;
+                    margin-bottom:5px;
 
+                    }
+                    .skills-top{
+                        padding-top:40px;
                     }`}</style>
             </>
 

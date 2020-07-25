@@ -16,6 +16,7 @@ class Services extends React.Component {
             <>
                 <Container maxWidth="lg">
                     <h1 className="titles-bg-black">Services</h1>
+                    <h3 className="sub-bg-black">Best for your business</h3>
                     <Grid container spacing={2}>
 
                         {this.state.services.map((servicio,id) =>
@@ -29,13 +30,7 @@ class Services extends React.Component {
 
 
                 </Container>
-                <style jsx global>{`
-                    .titles-bg-black{
-                    font-family:'Roboto';
-                    font-size:40px
-
-                    }`}</style>
-
+               
             </>
 
         )
