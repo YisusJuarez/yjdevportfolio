@@ -4,6 +4,7 @@ export default function Home() {
   return (
   
       <Head>
+         <html lang='ES'/>
         <title>Wecode - Professional Web Development</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" />
