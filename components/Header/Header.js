@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="Professional Web Development with the latest technologies, boost your brand with the power of UX, UI and Responsive Design."></meta>
         <meta name="author" content="Wecode"></meta>
         <meta name="keywords" content="HTML, CSS, JavaScript, web, development , systems"></meta>
-        <meta name="theme-color" content="#999999"/>
+        <meta name="theme-color" content="#757ae4"/>
       </Head>
      
   
