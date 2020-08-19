@@ -1,8 +1,8 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://dotcomfreelance.herokuapp.com/</loc>
+        <loc>https://www.wecode.team//</loc>
     </url>
     <url>
-        <loc>http://dotcomfreelance.herokuapp.com/portfolio</loc>
+        <loc>https://www.wecode.team//portfolio</loc>
     </url>
 </urlset>
