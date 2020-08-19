@@ -34,7 +34,7 @@ export default function NavPortafolio() {
               </IconButton>
             </Link>
             <Typography variant="h6" className={classes.title}>
-              Dotcom
+              wecode
           </Typography>
           </Toolbar>
         </Container>
