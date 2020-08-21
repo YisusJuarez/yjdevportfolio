@@ -9,7 +9,7 @@ class Portfolio extends React.Component {
                 <Container maxWidth="lg">
                     <Grid container>
                         <Grid item lg={4} md={4} sm={6} xs={12}>
-                            <h1 className="frase">Dotcom</h1>
+                            <h1 className="frase">wecode</h1>
                         </Grid>
                         <Grid item lg={4} md={4} sm={6} xs={6}>
                             <h1 className="frase">Discover</h1>
