@@ -20,7 +20,7 @@ class Portfolio extends React.Component {
                         </Grid>
                         <Grid item lg={4} md={4} sm={6} xs={6}>
                             <h1 className="frase">Follow</h1>
-                            <a href="https://www.instagram.com/dotcom_mk/">
+                            <a href="https://www.instagram.com/wecodemx/">
                             <img className="icons-social" src="/img/white-insta.png"/>
                             </a>
                             <a href="https://github.com/YisusJuarez">
