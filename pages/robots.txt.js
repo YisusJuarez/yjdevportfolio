@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 const getRobots = () => `User-agent: *
 Allow: /*
 Disallow: /api/*
@@ -12,4 +12,4 @@ class Robots extends React.Component {
     }
 }
 
-export default Robots;
+export default Robots;*/

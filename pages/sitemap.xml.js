@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 const getSitemap = () => `<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>https://wecode.team/</loc>
@@ -16,4 +16,4 @@ class Sitemap extends React.Component {
     }
 }
 
-export default Sitemap;
+export default Sitemap;*/
