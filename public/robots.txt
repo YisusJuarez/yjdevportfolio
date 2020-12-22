@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /*
 Disallow: /api/*
-Sitemap: https://www.wecode.team/sitemap.xml
+Sitemap: https://wecode.team/sitemap.xml

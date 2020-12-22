@@ -20,13 +20,19 @@ class SkillsExp extends React.Component {
                             <CardSkill Skill="CSS3" Descriptionskill="Cascading Style Sheets for Styling websites"></CardSkill>
                         </Grid>
                         <Grid item lg={4} md={6} sm={6} xs={6}>
+                            <CardSkill Skill="Sass" Descriptionskill="Powerful professional grade CSS extension language in the world"></CardSkill>
+                        </Grid>
+                        <Grid item lg={4} md={6} sm={6} xs={6}>
                             <CardSkill Skill="React" Descriptionskill="A JavaScript library for building user interfaces"></CardSkill>
                         </Grid>
                         <Grid item lg={4} md={6} sm={6} xs={6}>
                             <CardSkill Skill="NextJs" Descriptionskill="React Server Side Rendering Applications (SSR)"></CardSkill>
                         </Grid>
                         <Grid item lg={4} md={6} sm={6} xs={6}>
-                            <CardSkill Skill="SEO" Descriptionskill="Increasing the visibility of a website to users of a web search engine."></CardSkill>
+                            <CardSkill Skill="Git" Descriptionskill="widely used modern version control system"></CardSkill>
+                        </Grid>
+                        <Grid item lg={4} md={6} sm={6} xs={6}>
+                            <CardSkill Skill="SEO" Descriptionskill="Increasing the visibility of a website to users of a web search engine"></CardSkill>
                         </Grid>
 
                     </Grid>
