@@ -47,6 +47,7 @@ function HeadContent(props) {
         background-image:url('/img/bg-desk.png');
        background-size:cover;
        background-repeat:none;
+       background-position:top;
       }
         .btn-portafolio {
           margin-top:20px;
