@@ -29,7 +29,7 @@ export default function NavBar() {
         <Container maxWidth="lg">
           <Toolbar disableGutters>
             <Typography variant="h6" className={classes.title}>
-              wecode
+              YJDev
             </Typography>
           </Toolbar>
         </Container>

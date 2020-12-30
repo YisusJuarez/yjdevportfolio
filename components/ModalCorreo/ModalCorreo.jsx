@@ -195,7 +195,7 @@ export default function ModalCorreo() {
             font-size: 13px;
           }
           .btn-purple {
-           
+           margin-top:20px;
             background-color: #383fd9;
             color: white;
             font-family: "Roboto";

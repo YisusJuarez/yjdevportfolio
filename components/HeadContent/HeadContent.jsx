@@ -4,18 +4,22 @@ import Grid from "@material-ui/core/Grid";
 import ModalCorreo from "../ModalCorreo/ModalCorreo";
 import Typist from "react-typist";
 import Link from "next/link";
+
+
 function HeadContent(props) {
+
   return (
     <div className="bg">
       <NavBar></NavBar>
-      <Container maxWidth="lg">
+    
+      <Container maxWidth="lg" className="full-size-cont">
         <Grid container spacing={1}>
-          <Grid item md={7} sm={12}>
+          <Grid item md={12} sm={12}>
+
             <h1 className="h1-title">Freelance</h1>
             <h2 className="h2-subtitle">
               Front End <span className="h2-bgblack">Developer</span>
             </h2>
-
             <Typist
               cursor={{
                 show: false,
@@ -32,23 +36,20 @@ function HeadContent(props) {
             </Typist>
             <div className="center">
               <ModalCorreo></ModalCorreo>
-
-              <Link href="/portfolio">
-                <button className="btn-portafolio">PORTFOLIO</button>
-              </Link>
             </div>
-          </Grid>
-          <Grid item md={5}>
-            <img
-              className="img-person"
-              src="/img/person.png"
-              alt="person-image"
-            ></img>
           </Grid>
         </Grid>
       </Container>
+      
+      
       <style jsx>{`
+      .bg{
+        background-image:url('/img/bg-desk.png');
+       background-size:cover;
+       background-repeat:none;
+      }
         .btn-portafolio {
+          margin-top:20px;
           background-color: black;
           color: white;
           font-family: "Roboto";
@@ -66,34 +67,10 @@ function HeadContent(props) {
           outline: none !important;
           outline-width: 0 !important;
         }
-        .img-person {
-          width: 28vw;
-          text-align: center;
-          display: block;
-          justify-content: center;
-          align-items: center;
-          padding-left: 30px;
+      
 
-          animation:personmove 3s infinite;
-        }
-        @keyframes personmove {
-          0% {
-            transform: translateY(-10px);
-          }
-          
-          50% {
-            transform: translateY(10px);
-          }
-          100% {
-            transform: translateY(-10px);
-          }
-        }
-
-        .bg {
-          background-image: url("/img/bg.png");
+        .bg {          
           height: 100vh;
-          background-size: cover;
-          background-position: center;
           min-height: 500px;
         }
         .h1-title {
@@ -120,7 +97,30 @@ function HeadContent(props) {
           font-weight: 200;
           font-size: 24px;
         }
-        @media only screen and (max-width: 1000px) {
+        @media only screen and (min-width: 960px) and (max-width:1181px){
+         
+         
+          .h1-title {
+            padding-top:13vw;
+            font-size: 35px;
+            text-align: left;
+          }
+          .h2-subtitle {
+            font-family: "Roboto";
+            font-weight: 500;
+            font-size: 70px;
+            margin: 0px;
+            text-align: left;
+          }
+          .text-desc {
+            padding-top: 40px;
+            text-align: left;
+          }
+          .center {
+            text-align: left;
+          }
+        }
+        @media only screen and (max-width: 959px) {
           .btn-portafolio {
             margin-left: 0;
             margin-top: 20px;
@@ -128,9 +128,7 @@ function HeadContent(props) {
           .center {
             text-align: center;
           }
-          .img-person {
-            display: none;
-          }
+        
           .h1-title {
             font-size: 35px;
             text-align: center;
@@ -146,10 +144,8 @@ function HeadContent(props) {
             text-align: center;
           }
         }
-        @media only screen and (min-width: 1440px) {
-          .img-person {
-            padding-top: 8vw;
-          }
+        @media only screen and (min-width: 1182px) {
+        
           .h1-title {
             padding-top: 8vw;
             font-size: 45px;

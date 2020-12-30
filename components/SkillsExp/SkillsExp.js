@@ -2,6 +2,7 @@ import React from "react";
 import Container from "@material-ui/core/Container";
 import Grid from '@material-ui/core/Grid';
 import CardSkill from '../CardSkill/CardSkill';
+
 class SkillsExp extends React.Component {
     render() {
         return (
@@ -34,11 +35,17 @@ class SkillsExp extends React.Component {
                         <Grid item lg={4} md={6} sm={6} xs={6}>
                             <CardSkill Skill="SEO" Descriptionskill="Increasing the visibility of a website to users of a web search engine"></CardSkill>
                         </Grid>
-
                     </Grid>
                 </Container>
                 <style jsx global>{`
-                    .titles-bg-black{
+                 .sub-bg-black{
+                    font-family:'Roboto';
+                font-size:20px;
+                margin-top:0px;
+                color:#A6ACAF;
+
+                }
+                .titles-bg-black{
                     font-family:'Roboto';
                     font-size:40px;
                     margin-bottom:5px;
