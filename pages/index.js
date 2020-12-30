@@ -1,5 +1,6 @@
 import Header from "../components/Header/Header";
 import HeadContent from '../components/HeadContent/HeadContent';
+
 export default function Home() {
   return (
     <div className="container">
