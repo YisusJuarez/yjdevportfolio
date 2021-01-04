@@ -44,7 +44,7 @@ function HeadContent(props) {
       
       <style jsx>{`
       .bg{
-        background-image:url('/img/bg-desk.png');
+        background-image:url('/img/bg-desk-2.png');
        background-size:cover;
        background-repeat:none;
        background-position:top;
