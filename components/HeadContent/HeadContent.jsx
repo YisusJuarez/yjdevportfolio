@@ -76,27 +76,30 @@ function HeadContent(props) {
         }
         .h1-title {
           font-family: "Roboto";
-          font-weight: 100;
-          font-size: 55px;
+          font-weight: 300;
+          font-size: 65px;
           margin: 0px;
           padding-top: 7%;
+          color:white;
         }
         .h2-subtitle {
           font-family: "Roboto";
           font-weight: 500;
-          font-size: 70px;
+          font-size: 80px;
           margin: 0px;
+          color:white;
         }
         .h2-bgblack {
           background-color: black;
           color: white;
           padding-left: 5px;
           padding-right: 5px;
+
         }
         .text-desc {
           font-family: "Roboto";
           font-weight: 200;
-          font-size: 24px;
+          font-size: 32px;
         }
         @media only screen and (min-width: 960px) and (max-width:1181px){
          
@@ -131,18 +134,21 @@ function HeadContent(props) {
           }
         
           .h1-title {
-            font-size: 35px;
+            font-size: 35px !important;
             text-align: center;
+            color:white;
           }
           .h2-subtitle {
             font-family: "Roboto";
             font-weight: 500;
-            font-size: 60px;
+            font-size: 60px !important;
             margin: 0px;
             text-align: center;
+            color:white;
           }
           .text-desc {
             text-align: center;
+            font-size:25px;
           }
         }
         @media only screen and (min-width: 1182px) {
