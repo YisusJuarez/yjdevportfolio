@@ -23,6 +23,11 @@ export default function Home() {
         .content-cont{
 padding-top:70px;
         }
+        @media only screen and (max-width: 959px){
+          .content-cont{
+            padding-top:10px;
+                    }
+        } 
       `}</style>
     </div>
   )
