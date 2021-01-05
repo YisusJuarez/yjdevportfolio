@@ -38,9 +38,18 @@ class Services extends React.Component {
                     .titles-bg-black-2{
                         margin-top:0px;
                         font-family:'Roboto';
-                        font-size:40px;
+                        font-size:55px;
                         margin-bottom:5px;
 
+                        }
+                        @media only screen and (max-width: 959px){
+                            .titles-bg-black-2{
+                                margin-top:0px;
+                                font-family:'Roboto';
+                                font-size:30px;
+                                margin-bottom:5px;
+        
+                                }
                         }
                 `}</style>
             </>

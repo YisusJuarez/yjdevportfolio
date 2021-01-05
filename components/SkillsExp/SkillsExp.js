@@ -47,13 +47,24 @@ class SkillsExp extends React.Component {
                 }
                 .titles-bg-black{
                     font-family:'Roboto';
-                    font-size:40px;
+                    font-size:55px;
                     margin-bottom:5px;
 
                     }
                     .skills-top{
                         padding-top:40px;
-                    }`}</style>
+                    }
+                    
+                    @media only screen and (max-width: 959px){
+                        .titles-bg-black{
+                            margin-top:0px;
+                            font-family:'Roboto';
+                            font-size:30px;
+                            margin-bottom:5px;
+    
+                            }
+                    }
+                    `}</style>
             </>
 
         )
