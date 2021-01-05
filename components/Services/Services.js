@@ -15,19 +15,34 @@ class Services extends React.Component {
         return (
             <>
                 <Container maxWidth="lg">
-                    <h1 className="titles-bg-black">Services</h1>
-                    <h3 className="sub-bg-black">Best for your business</h3>
-                    <Grid container spacing={2}>
+                    <Grid container spacing={2} >
+                        <Grid item lg={6} md={6} sm={6} xs={6}>
+                            <h1 className="titles-bg-black-2">Services</h1>
+                            <h3 className="sub-bg-black">Best for your business</h3>
+                        </Grid>
+                        <Grid item lg={6} md={6} sm={12} xs={12}>
 
-                        {this.state.services.map((servicio,id) =>
-                            <Grid item lg={2} md={3} sm={3} xs={6} >
-                                <ServicesCard name={servicio.name} img={servicio.img}></ServicesCard>
+                            <Grid container>
+                                {this.state.services.map((servicio, id) =>
+                                    <Grid item lg={6} md={6} sm={6} xs={6} >
+                                        <ServicesCard name={servicio.name} img={servicio.img}></ServicesCard>
+                                    </Grid>
+                                )}
                             </Grid>
-                        )}
+                        </Grid>
 
                     </Grid>
                 </Container>
-               
+                <style jsx >{`
+ 
+                    .titles-bg-black-2{
+                        margin-top:0px;
+                        font-family:'Roboto';
+                        font-size:40px;
+                        margin-bottom:5px;
+
+                        }
+                `}</style>
             </>
 
         )

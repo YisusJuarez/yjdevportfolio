@@ -1,9 +1,8 @@
 import Container from "@material-ui/core/Container";
 import NavBar from "../NavBar/NavBar";
 import Grid from "@material-ui/core/Grid";
-import ModalCorreo from "../ModalCorreo/ModalCorreo";
 import Typist from "react-typist";
-import Link from "next/link";
+
 
 
 function HeadContent(props) {
@@ -34,15 +33,19 @@ function HeadContent(props) {
                 <br /> UX, UI interface & SEO 🔥.
               </p>
             </Typist>
-            <div className="center">
-              <ModalCorreo></ModalCorreo>
-            </div>
+           
+            <p className="scroll">SCROLL TO SEE MORE __</p>
           </Grid>
         </Grid>
       </Container>
       
       
       <style jsx>{`
+      .scroll{
+        color:#4A235A;
+        font-family: "Roboto";
+          font-weight: bolder;
+      }
       .bg{
         background-image:url('/img/bg-desk-2.png');
        background-size:cover;
@@ -77,21 +80,21 @@ function HeadContent(props) {
         .h1-title {
           font-family: "Roboto";
           font-weight: 300;
-          font-size: 65px;
+          font-size: 75px;
           margin: 0px;
-          padding-top: 7%;
+          padding-top: 33%;
           color:white;
         }
         .h2-subtitle {
           font-family: "Roboto";
           font-weight: 500;
-          font-size: 80px;
+          font-size: 90px;
           margin: 0px;
           color:white;
         }
         .h2-bgblack {
-          background-color: black;
-          color: white;
+          
+          color: black;
           padding-left: 5px;
           padding-right: 5px;
 
@@ -99,32 +102,36 @@ function HeadContent(props) {
         .text-desc {
           font-family: "Roboto";
           font-weight: 200;
-          font-size: 32px;
+          font-size: 42px;
         }
         @media only screen and (min-width: 960px) and (max-width:1181px){
          
          
           .h1-title {
             padding-top:13vw;
-            font-size: 35px;
+            font-size: 55px;
             text-align: left;
           }
           .h2-subtitle {
             font-family: "Roboto";
             font-weight: 500;
-            font-size: 70px;
+            font-size: 90px;
             margin: 0px;
             text-align: left;
           }
           .text-desc {
             padding-top: 40px;
             text-align: left;
+            font-size:40px;
           }
           .center {
             text-align: left;
           }
         }
         @media only screen and (max-width: 959px) {
+          .scroll{
+            text-align:center;
+          }
           .btn-portafolio {
             margin-left: 0;
             margin-top: 20px;
@@ -155,10 +162,10 @@ function HeadContent(props) {
         
           .h1-title {
             padding-top: 8vw;
-            font-size: 45px;
+            font-size: 60px;
           }
           .h2-subtitle {
-            font-size: 80px;
+            font-size: 100px;
           }
         }
       `}</style>

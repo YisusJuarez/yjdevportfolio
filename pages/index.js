@@ -21,11 +21,11 @@ export default function Home() {
          margin:0px;
         }
         .content-cont{
-padding-top:70px;
+padding-top:120px;
         }
         @media only screen and (max-width: 959px){
           .content-cont{
-            padding-top:10px;
+            padding-top:60px;
                     }
         } 
       `}</style>
