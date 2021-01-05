@@ -82,7 +82,7 @@ function HeadContent(props) {
           font-weight: 300;
           font-size: 75px;
           margin: 0px;
-          padding-top: 33%;
+          padding-top: 30%;
           color:white;
         }
         .h2-subtitle {
