@@ -16,7 +16,7 @@ class Services extends React.Component {
             <>
                 <Container maxWidth="lg">
                     <Grid container spacing={2} >
-                        <Grid item lg={6} md={6} sm={6} xs={6}>
+                        <Grid item lg={6} md={6} sm={12} xs={12}>
                             <h1 className="titles-bg-black-2">Services</h1>
                             <h3 className="sub-bg-black">Best for your business</h3>
                         </Grid>
