@@ -8,14 +8,14 @@ const HeadContent = (props) => {
   return (
     <div className="bg">
       <NavBar></NavBar>
-      <Container maxWidth="lg" style={{ height: '95vh'}}>
+      <Container maxWidth="lg" style={{ height: 'calc(100vh - 50px)'}}>
         <Grid
           container
           direction="row"
-          alignItems="center"
           alignContent="center"
+          justify="center"
           spacing={1}
-          style={{ height: "calc(100vh - calc(100vh - 100%))" }}
+          style={{ height: "100%" }}
         >
           <Grid item md={12} sm={12}>
             <h1 className="h1-title">Freelance</h1>
@@ -38,8 +38,9 @@ const HeadContent = (props) => {
                 <br /> UX, UI interface & SEO 🔥.
               </p>
             </Typist>
-            <p className="scroll">SCROLL TO SEE MORE __</p>
+           
           </Grid>
+          <Grid item md={12} sm={12}><p className="scroll">SCROLL TO SEE MORE __</p></Grid>
 
         </Grid>
       </Container>
