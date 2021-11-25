@@ -24,6 +24,9 @@ const SkillsExp = () => {
         </Grid>
       </Container>
       <style jsx global>{`
+      html::-webkit-scrollbar {
+        display: none;
+      }
         .sub-bg-black {
           font-family: "Roboto";
           font-size: 20px;
