@@ -5,7 +5,7 @@ export default function Home() {
   
       <Head>
          <html lang='en'/>
-        <title>Wecode - Professional Web Development</title>
+        <title>YJDev - Professional Web Development</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" />
         <meta name="description" content="Professional Web Development with the latest technologies, boost your brand with the power of UX, UI and Responsive Design."></meta>
