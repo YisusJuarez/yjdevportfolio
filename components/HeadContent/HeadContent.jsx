@@ -57,21 +57,9 @@ const HeadContent = (props) => {
           background-size: cover;
           background-repeat: none;
           background-position: top;
-          animation-name: rotate;
-          animation-duration: 7s;
-          animation-iteration-count: infinite;
+          
         }
-        @keyframes rotate {
-          0% {
-            background-position: top right;
-          }
-          50% {
-            background-position: bottom right;
-          }
-          100% {
-            background-position: top left;
-          }
-        }
+        
 
         .btn-portafolio {
           margin-top: 20px;
