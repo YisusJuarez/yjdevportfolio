@@ -5,7 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import ModalCorreo from '../ModalCorreo/ModalCorreo';
 import Container from "@material-ui/core/Container";
 import Link from 'next/link'
 const useStyles = makeStyles((theme) => ({
