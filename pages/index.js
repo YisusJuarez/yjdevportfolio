@@ -1,9 +1,9 @@
 import Header from "../components/Header/Header";
-import HeadContent from '../components/HeadContent/HeadContent';
+import HeadContent from "../components/HeadContent/HeadContent";
 import SkillsExp from "../components/SkillsExp/SkillsExp";
-import PortfolioList from '../components/PortfolioList/PortfolioList'
-import Services from '../components/Services/Services';
-import Footer from '../components/Footer/Footer';
+import PortfolioList from "../components/PortfolioList/PortfolioList";
+import Services from "../components/Services/Services";
+import Footer from "../components/Footer/Footer";
 export default function Home() {
   return (
     <div className="container">
@@ -17,18 +17,18 @@ export default function Home() {
 
       <Footer></Footer>
       <style jsx global>{`
-      body{
-         margin:0px;
+        body {
+          margin: 0px;
         }
-        .content-cont{
-padding-top:120px;
+        .content-cont {
+          padding-top: 120px;
         }
-        @media only screen and (max-width: 959px){
-          .content-cont{
-            padding-top:60px;
-                    }
-        } 
+        @media only screen and (max-width: 959px) {
+          .content-cont {
+            padding-top: 60px;
+          }
+        }
       `}</style>
     </div>
-  )
+  );
 }

@@ -16,9 +16,10 @@
     "@material-ui/icons": "^4.9.1",
     "emailjs-com": "^2.4.1",
     "next": "11.1.0",
-    "react": "16.13.1",
+    "react": "^17.0.2",
     "react-dom": "16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-typist": "^2.0.5"
+    "react-typist": "^2.0.5",
+    "styled-jsx": "^4.0.1"
   }
 }

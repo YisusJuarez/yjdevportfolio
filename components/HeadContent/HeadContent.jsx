@@ -2,23 +2,28 @@ import Container from "@material-ui/core/Container";
 import NavBar from "../NavBar/NavBar";
 import Grid from "@material-ui/core/Grid";
 import Typist from "react-typist";
+import { Box } from "@material-ui/core";
 
-
-
-function HeadContent(props) {
-
+const HeadContent = (props) => {
   return (
     <div className="bg">
       <NavBar></NavBar>
-    
-      <Container maxWidth="lg" className="full-size-cont">
-        <Grid container spacing={1}>
+      <Container maxWidth="lg" style={{ height: '95vh'}}>
+        <Grid
+          container
+          direction="row"
+          alignItems="center"
+          alignContent="center"
+          spacing={1}
+          style={{ height: "100%" }}
+        >
           <Grid item md={12} sm={12}>
-
             <h1 className="h1-title">Freelance</h1>
             <h2 className="h2-subtitle">
               Front End <span className="h2-bgblack">Developer</span>
             </h2>
+          </Grid>
+          <Grid item md={12} sm={12}>
             <Typist
               cursor={{
                 show: false,
@@ -33,27 +38,26 @@ function HeadContent(props) {
                 <br /> UX, UI interface & SEO 🔥.
               </p>
             </Typist>
-           
             <p className="scroll">SCROLL TO SEE MORE __</p>
           </Grid>
+
         </Grid>
       </Container>
-      
-      
+
       <style jsx>{`
-      .scroll{
-        color:#4A235A;
-        font-family: "Roboto";
+        .scroll {
+          color: #4a235a;
+          font-family: "Roboto";
           font-weight: bolder;
-      }
-      .bg{
-        background-image:url('/img/bg-desk-2.png');
-       background-size:cover;
-       background-repeat:none;
-       background-position:top;
-      }
+        }
+        .bg {
+          background-image: url("/img/bg-desk-2.png");
+          background-size: cover;
+          background-repeat: none;
+          background-position: top;
+        }
         .btn-portafolio {
-          margin-top:20px;
+          margin-top: 20px;
           background-color: black;
           color: white;
           font-family: "Roboto";
@@ -71,44 +75,33 @@ function HeadContent(props) {
           outline: none !important;
           outline-width: 0 !important;
         }
-      
 
-        .bg {          
-          height: 100vh;
-          min-height: 500px;
-        }
         .h1-title {
           font-family: "Roboto";
           font-weight: 300;
           font-size: 75px;
           margin: 0px;
-          padding-top: 30%;
-          color:white;
+          color: white;
         }
         .h2-subtitle {
           font-family: "Roboto";
           font-weight: 500;
           font-size: 90px;
           margin: 0px;
-          color:white;
+          color: white;
         }
         .h2-bgblack {
-          
           color: black;
           padding-left: 5px;
           padding-right: 5px;
-
         }
         .text-desc {
           font-family: "Roboto";
           font-weight: 200;
           font-size: 42px;
         }
-        @media only screen and (min-width: 960px) and (max-width:1181px){
-         
-         
+        @media only screen and (min-width: 960px) and (max-width: 1181px) {
           .h1-title {
-            padding-top:13vw;
             font-size: 55px;
             text-align: left;
           }
@@ -122,15 +115,15 @@ function HeadContent(props) {
           .text-desc {
             padding-top: 40px;
             text-align: left;
-            font-size:40px;
+            font-size: 40px;
           }
           .center {
             text-align: left;
           }
         }
         @media only screen and (max-width: 959px) {
-          .scroll{
-            text-align:center;
+          .scroll {
+            text-align: center;
           }
           .btn-portafolio {
             margin-left: 0;
@@ -139,11 +132,11 @@ function HeadContent(props) {
           .center {
             text-align: center;
           }
-        
+
           .h1-title {
             font-size: 35px !important;
             text-align: center;
-            color:white;
+            color: white;
           }
           .h2-subtitle {
             font-family: "Roboto";
@@ -151,17 +144,15 @@ function HeadContent(props) {
             font-size: 60px !important;
             margin: 0px;
             text-align: center;
-            color:white;
+            color: white;
           }
           .text-desc {
             text-align: center;
-            font-size:25px;
+            font-size: 25px;
           }
         }
         @media only screen and (min-width: 1182px) {
-        
           .h1-title {
-            padding-top: 8vw;
             font-size: 60px;
           }
           .h2-subtitle {
@@ -171,6 +162,6 @@ function HeadContent(props) {
       `}</style>
     </div>
   );
-}
+};
 
 export default HeadContent;
