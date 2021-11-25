@@ -8,7 +8,7 @@ const HeadContent = (props) => {
   return (
     <div className="bg">
       <NavBar></NavBar>
-      <Container maxWidth="lg" style={{ height: 'calc(100vh - 50px)'}}>
+      <Container maxWidth="lg" style={{ height: "calc(100vh - 50px)" }}>
         <Grid
           container
           direction="row"
@@ -34,14 +34,14 @@ const HeadContent = (props) => {
               <p className="text-desc">
                 Hi 👋, I’m Jesús Juárez.
                 <br />
-                I’ll boost your brand with the power of responsive design,
-                <br /> UX, UI interface & SEO 🔥.
+                Especialized on Responsive design,
+                <br /> UX/UI Design & React 🔥.
               </p>
             </Typist>
-           
           </Grid>
-          <Grid item md={12} sm={12}><p className="scroll">SCROLL TO SEE MORE __</p></Grid>
-
+          <Grid item md={12} sm={12}>
+            <p className="scroll">SCROLL TO SEE MORE __</p>
+          </Grid>
         </Grid>
       </Container>
 
@@ -51,12 +51,28 @@ const HeadContent = (props) => {
           font-family: "Roboto";
           font-weight: bolder;
         }
+
         .bg {
           background-image: url("/img/bg-desk-2.png");
           background-size: cover;
           background-repeat: none;
           background-position: top;
+          animation-name: rotate;
+          animation-duration: 7s;
+          animation-iteration-count: infinite;
         }
+        @keyframes rotate {
+          0% {
+            background-position: top right;
+          }
+          50% {
+            background-position: bottom right;
+          }
+          100% {
+            background-position: top left;
+          }
+        }
+
         .btn-portafolio {
           margin-top: 20px;
           background-color: black;

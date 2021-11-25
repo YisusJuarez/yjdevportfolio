@@ -8,7 +8,7 @@ const SkillsExp = () => {
   return (
     <>
       <Container maxWidth="lg" className="skills-top">
-        <h1 className="titles-bg-black">Skills</h1>
+        <h1 className="titles-bg-black">My Skills</h1>
         <h3 className="sub-bg-black">Latest technologies</h3>
         <Grid container spacing={2}>
           {skills.map((s) => {
