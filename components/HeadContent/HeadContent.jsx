@@ -15,7 +15,7 @@ const HeadContent = (props) => {
           alignItems="center"
           alignContent="center"
           spacing={1}
-          style={{ height: "100%" }}
+          style={{ height: "calc(100vh - calc(100vh - 100%))" }}
         >
           <Grid item md={12} sm={12}>
             <h1 className="h1-title">Freelance</h1>
